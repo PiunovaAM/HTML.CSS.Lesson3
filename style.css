@@ -1,0 +1,110 @@
+/* импорт шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+
+/* обнуление стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* чтобы  дочерний бокс не вылезал за пределы родительского*/
+  text-decoration: none; /* убирает все подчеркивания */
+}
+
+body {
+  scroll-behavior: smooth; /* мягкий скролл старницы */
+  background: #020a18;
+  font-family: "Open Sans"; /* шрифт для всего сайта*/
+  color: #fff; /* цвет шрифта для всего сайта */
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%; /* картинка занимает всю ширину */
+  display: block; /* чтобы картинка не вылезала за рамки блока, будет адекватно подстраиваться под верстку и стилизацию */
+}
+.container {
+  /* делаем центровку*/
+  max-width: 1146px; /* задаем максимальную ширину (по макету)*/
+  margin: 0 auto; /* 0 отвечает за отступы сверху и снизу, auto отвечает за отступы слева и справа, таким образом оно отвечает за центрирование*/
+}
+
+.header {
+  margin-bottom: 160px; /* задаем отступ от main(внешний, нижний)*/
+}
+
+.navigation {
+  padding: 39px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 40 px;
+}
+
+.navigation__link {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.main {
+  margin-bottom: 197px; /* задаем отступ от footer (внешний, нижний)*/
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__left-side {
+  max-width: 604px;
+}
+
+.content__left-side h2 {
+  color: #3a68b8;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content__left-side h1 {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.content__left-side p {
+  max-width: 558px;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+
+.content__btn-list {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  border-radius: 5px;
+  background: #3a68b8;
+  padding: 15px 30px; /* внутренние отступы (вверх и бок) */
+  border: none; /* убрали рамки */
+  cursor: pointer; /* курсор с пальцем */
+}
+
+.btn__play {
+  display: flex;
+  gap: 10px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
