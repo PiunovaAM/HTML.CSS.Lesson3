@@ -1,5 +1,5 @@
 /* импорт шрифтов */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap");
 
 /* обнуление стилей */
 * {
@@ -35,7 +35,7 @@ img {
   padding: 39px 0px;
   display: flex;
   justify-content: center;
-  gap: 40 px;
+  gap: 40px;
 }
 
 .navigation__link {
@@ -49,6 +49,7 @@ img {
 }
 
 .content {
+  margin-bottom: 197px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -107,4 +108,42 @@ img {
 .logos {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px; /* нижний внешний отступ */
+}
+
+.cards__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; /* */
+  gap: 30px;
+}
+
+.cards {
+  border-radius: 10px;
+  background: #132035;
+  padding: 30px;
+  display: flex; /* все элементы которые находятся внутри блока флексе занимают все возможное пространство, подстраиваются под самый больший элемент, выстраиватся друг за другом, */
+  text-align: center;
+  flex-direction: column;
+  align-items: center; /* заставляем принять картинку нужные размеры, а не расстягиваться на все пространство */
+  gap: 30px;
+}
+
+.cards h2 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 125%;
+  opacity: 0.7;
+}
+
+.cards p {
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 0.7;
+}
+
+.cards__big {
+  grid-column: span 2; /* забираем 2 ячейки */
+  grid-row: span 2; /* забираем 2 ячейки */
+  gap: 60px;
 }
