@@ -35,7 +35,7 @@ img {
   padding: 39px 0px;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 32px;
 }
 
 .navigation__link {
@@ -107,6 +107,7 @@ img {
 
 .logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 100px; /* нижний внешний отступ */
 }
@@ -146,4 +147,47 @@ img {
   grid-column: span 2; /* забираем 2 ячейки */
   grid-row: span 2; /* забираем 2 ячейки */
   gap: 60px;
+}
+
+@media (max-width: 1146px) and (min-width: 848px) {
+  /* Под планшеты по макету */
+
+  .container {
+    max-width: 767px;
+  }
+
+  .content__left-side h2 {
+    font-size: 15px;
+  }
+
+  .content__left-side h1 {
+    font-size: 48px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 128px;
+    align-items: center;
+  }
+
+  .logos {
+    max-width: 534px;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .cards__list {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-items: center;
+  }
+
+  .cards {
+    background: #111826;
+    max-width: 362px;
+  }
+
+  .hidden {
+    display: none;
+  }
 }
