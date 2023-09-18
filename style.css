@@ -191,3 +191,72 @@ img {
     display: none;
   }
 }
+
+@media (max-width: 847px) {
+  /* Под мобилку */
+
+  .container {
+    max-width: 343px;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+  }
+
+  .navigation {
+    gap: 16px;
+    padding: 22px 0;
+  }
+
+  .header {
+    margin-bottom: 64px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 128px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 128px;
+  }
+
+  .content__left-side h2 {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .content__left-side h1 {
+    font-size: 28px;
+    margin-bottom: 64px;
+  }
+
+  .content__left-side p {
+    margin-bottom: 39px;
+  }
+
+  .content__btn-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .logos {
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .cards__list {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-items: center;
+  }
+
+  .cards {
+    background: #111826;
+    max-width: 343px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
